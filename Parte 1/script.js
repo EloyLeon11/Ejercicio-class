@@ -24,6 +24,7 @@ const request = fetch(
 
             // creo la lista con innerHTML que es para añadir texto, y hago template para añadir los valores del array que yo quiera. Añado la lista dentro del div creado dentro del div results
             creacionID.innerHTML = `
+            <p><strong>ID:</strong> ${usuario.id}</p> 
             <p><strong>Nombre:</strong> ${usuario.firstname} ${usuario.lastname}</p> 
             <p><strong>Username:</strong> ${usuario.username}</p> 
             <p><strong>Password:</strong> ${usuario.password}</p> 
