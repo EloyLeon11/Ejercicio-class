@@ -1,3 +1,5 @@
+
+
 // Creo la clase persona
 class Persona {
     // Creo el constructor en la clase persona para definir sus propiedades
@@ -45,9 +47,13 @@ console.log(persona1);
 const usuario1 = new Usuario({    
     id: persona1.id,
     firstname: persona1.firstname,
-    lastname: persona1.lastname
+    lastname: persona1.lastname,
+    password: 1234,
+    username: "Leon11",
+    email: "eloyribes11@gmail.com",
+    website: "eloyleon.com",
+    image: "karaku.png"
+
     });
 
-
-    
 console.log(usuario1);
