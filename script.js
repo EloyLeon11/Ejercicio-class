@@ -8,9 +8,10 @@ const request = fetch(
         }
         console.log("La conexion con la API ha sido exitosa");
         return response.json();
-    }).then((array) => {
-        const usuarios = array.data.map(user => new Usuario(user));
+    }).then((jsdata) => {
 
+        const usuarios = jsdata.data.map(user => new Usuario(user));
+       
         console.log("Usuarios Obtenidos:", usuarios)
     }).catch((error) => {
         console.log("Error al obtener usuarios", error)
